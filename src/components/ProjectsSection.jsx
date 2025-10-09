@@ -77,7 +77,7 @@ const ProjectsSection = () => {
 
             </div>
             <div className="text-center mt-12">
-                <a className="cosmic-button w-fit flex items-center mx-auto gap-2">
+                <a className="cosmic-button w-fit flex items-center mx-auto gap-2" href="https://github.com/Aki1781" target="_blank">
                     Check my GitHub <ArrowRight size={16} />
                 </a>
 
