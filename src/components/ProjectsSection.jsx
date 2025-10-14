@@ -5,22 +5,22 @@ import React from 'react'
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
+    title: "Spotify Unwrapped",
     description: "A beautiful landing page app using React and Tailwind.",
-    image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
-    demoUrl: "#",
-    githubUrl: "#",
+    image: "src/assets/unwrapped.png",
+    tags: ["Java", "Kotlin", "Android Studio"],
+    demoUrl: "https://zghazanfar922.wixsite.com/unwrappd",
+    githubUrl: "https://github.com/VigneshSK17/Unwrappd",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "Twiiter Clone",
     description:
       "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: "/projects/project2.png",
+    image: 'src/assets/twiiter.png',
     tags: ["TypeScript", "D3.js", "Next.js"],
-    demoUrl: "#",
-    githubUrl: "#",
+    demoUrl: "https://github.com/Aki1781/Twitter-Clone",
+    githubUrl: "https://github.com/Aki1781/Twitter-Clone",
   },
   {
     id: 3,
@@ -37,7 +37,7 @@ const projects = [
 const ProjectsSection = () => {
   return (
     <section id="projects" className="py-24 px-4 relative">
-        <div classNAme="container mx-auto max-w-5xl">
+        <div className="container mx-auto max-w-5xl">
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center"> 
                 {" "}
                 Featured <span className="text-primary"> Projects </span>
@@ -63,13 +63,13 @@ const ProjectsSection = () => {
                             </div>
 
                         </div>
-                        <h3 ckassName="text-xl font-semibold mb-1"> {project.title}</h3>
+                        <h3 className="text-xl font-semibold mb-1"> {project.title}</h3>
                         <p className="text-muted-foreground text-sm mb-4"> {project.description}</p>
 
                         <div className="flex jusify-between items-center">
                             <div className="flex space-x-3">
-                                <a target="_blank "className="text-goreground/80 hover:text-primary transition-colors duration-300"> <ExternalLink size={20}/> </a>
-                                <a target="_blank" className="text-goreground/80 hover:text-primary transition-colors duration-300"> <Github size={20}/> </a>
+                                <a href={project.demoUrl} target="_blank "className="text-goreground/80 hover:text-primary transition-colors duration-300"> <ExternalLink size={20}/> </a>
+                                <a href={project.githubUrl} target="_blank" className="text-goreground/80 hover:text-primary transition-colors duration-300"> <Github size={20}/> </a>
                             </div>
                         </div>
                     </div>

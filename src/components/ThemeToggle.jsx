@@ -27,13 +27,23 @@ const ThemeToggle = () => {
         }
     }
     return (
-        <button onClick={toggleTheme} className={cn(
-                "fixed max-sm:hidden top-5 right-5 z-50 p-2 rounded-full transition-colors duration-300",
+        <button
+            onClick={toggleTheme}
+            aria-label={isDarkMode ? 'Switch to light mode' : 'Switch to dark mode'}
+            title={isDarkMode ? 'Light mode' : 'Dark mode'}
+            className={cn(
+                // show on md and up so it aligns with the navbar; remove fixed positioning
+                "hidden md:inline-flex p-2 rounded-full transition-colors duration-300 theme-toggle relative",
                 "focus:outline-none"
-        )}>
-        {isDarkMode ? <Sun className="h-6 w-6 text-yellow-300"/> : <Moon className="h-6 w-6 text-blue-900"/>}
-    </button>
-  )
+        )}
+        >
+            {isDarkMode ? (
+                <Sun className="h-6 w-6 theme-toggle-sun" />
+            ) : (
+                <Moon className="h-6 w-6 theme-toggle-moon" />
+            )}
+        </button>
+    )
 }
 
 export default ThemeToggle
