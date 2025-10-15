@@ -2,6 +2,7 @@ import {
   Instagram,
   Linkedin,
   Mail,
+  MailIcon,
   MapPin,
   Phone,
   Send,
@@ -98,17 +99,14 @@ const ContactSection = () => {
             <div className="pt-8">
               <h4 className="font-medium mb-4 text-center">Connect With Me</h4>
               <div className="flex space-x-4 justify-center">
-                <a href="#" target="_blank" aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/akashpatel99/" target="_blank" aria-label="LinkedIn">
                   <Linkedin />
                 </a>
-                <a href="#" target="_blank" aria-label="Twitter">
-                  <Twitter />
+                <a href="mailto:akipatel1781@gmail.com" target="_blank" aria-label="Twitter">
+                  <MailIcon />
                 </a>
-                <a href="#" target="_blank" aria-label="Instagram">
+                <a href="https://www.instagram.com/akashpatel1_/?hl=en" target="_blank" aria-label="Instagram">
                   <Instagram />
-                </a>
-                <a href="#" target="_blank" aria-label="Twitch">
-                  <Twitch />
                 </a>
               </div>
             </div>

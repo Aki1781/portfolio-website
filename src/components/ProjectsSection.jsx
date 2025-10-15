@@ -6,9 +6,9 @@ const projects = [
   {
     id: 1,
     title: "Spotify Unwrapped",
-    description: "A beautiful landing page app using React and Tailwind.",
+    description: "A web app that visualizes your yearly Spotify listening stats",
     image: "src/assets/unwrapped.png",
-    tags: ["Java", "Kotlin", "Android Studio"],
+    tags: ["Java", "Kotlin", "Firebase", "Android Studio"],
     demoUrl: "https://zghazanfar922.wixsite.com/unwrappd",
     githubUrl: "https://github.com/VigneshSK17/Unwrappd",
   },
@@ -16,21 +16,21 @@ const projects = [
     id: 2,
     title: "Twiiter Clone",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
+      "A social media app that mimics Twitter’s core features like posting, liking, and following",
     image: 'src/assets/twiiter.png',
-    tags: ["TypeScript", "D3.js", "Next.js"],
+    tags: ["Dart", "C++", "Swift", "Flutter", "HTML", "Ruby"],
     demoUrl: "https://github.com/Aki1781/Twitter-Clone",
     githubUrl: "https://github.com/Aki1781/Twitter-Clone",
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "AI-Powered T-Shirt Designer",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
-    image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
-    demoUrl: "#",
-    githubUrl: "#",
+      "An app that uses AI to generate and customize unique T-shirt designs",
+    image: "src/assets/ai-powered.png",
+    tags: ["React", "Node.js", "Express", "Three.js"],
+    demoUrl: "https://github.com/Aki1781/ai-powered-web",
+    githubUrl: "https://github.com/Aki1781/ai-powered-web",
   },
 ];
 
@@ -44,7 +44,7 @@ const ProjectsSection = () => {
             </h2>
 
             <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos ratione accusamus reiciendis optio modi eligendi blanditiis aliquam animi totam. Neque a voluptate eos blanditiis magni dolores molestias tempore temporibus beatae!
+              Welcome to my project gallery — a showcase of creativity, innovation, and problem-solving! Each project here reflects my passion for building impactful, user-focused applications that blend design, logic, and technology. From AI-driven tools to data-powered insights and interactive web apps, every creation tells a story of curiosity, growth, and the joy of turning ideas into reality!
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
