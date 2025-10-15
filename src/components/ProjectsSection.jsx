@@ -7,7 +7,7 @@ const projects = [
     id: 1,
     title: "Spotify Unwrapped",
     description: "A web app that visualizes your yearly Spotify listening stats",
-    image: "src/assets/unwrapped.png",
+    image: "/assets/unwrapped.png",
     tags: ["Java", "Kotlin", "Firebase", "Android Studio"],
     demoUrl: "https://zghazanfar922.wixsite.com/unwrappd",
     githubUrl: "https://github.com/VigneshSK17/Unwrappd",
@@ -17,7 +17,7 @@ const projects = [
     title: "Twiiter Clone",
     description:
       "A social media app that mimics Twitter’s core features like posting, liking, and following",
-    image: 'src/assets/twiiter.png',
+    image: '/assets/twiiter.png',
     tags: ["Dart", "C++", "Swift", "Flutter", "HTML", "Ruby"],
     demoUrl: "https://github.com/Aki1781/Twitter-Clone",
     githubUrl: "https://github.com/Aki1781/Twitter-Clone",
@@ -27,7 +27,7 @@ const projects = [
     title: "AI-Powered T-Shirt Designer",
     description:
       "An app that uses AI to generate and customize unique T-shirt designs",
-    image: "src/assets/ai-powered.png",
+    image: "/assets/ai-powered.png",
     tags: ["React", "Node.js", "Express", "Three.js"],
     demoUrl: "https://github.com/Aki1781/ai-powered-web",
     githubUrl: "https://github.com/Aki1781/ai-powered-web",
