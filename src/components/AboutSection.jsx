@@ -22,8 +22,8 @@ export const AboutSection = () => {
             </p>
 
             <p className="text-muted-foreground">
-              From building AI-powered automation at Amazon and TikTok to designing full-stack apps at 
-              Research Innovations Inc., every challenge has strengthened my drive to create 
+              From building LLM-powered developer tools at Apple and Amazon to designing backend systems at 
+              TikTok and full-stack apps at Research Innovations Inc., every challenge has strengthened my drive to create 
               impactful, data-driven solutions.
             </p>
 

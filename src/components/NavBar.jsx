@@ -6,7 +6,8 @@ import ThemeToggle from './ThemeToggle';
 const navItems = [
     { name: 'Home', href: "#hero"},
     { name: 'About', href: "#about"},
-    { name: 'Skils', href: "#skills"},
+    { name: 'Skills', href: "#skills"},
+    { name: 'Experience', href: "#experience"},
     { name: 'Projects', href: "#projects"},
     { name: 'Contact', href: "#contact"},
 ]
@@ -17,7 +18,7 @@ const NavBar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            setisScrolled(window.screenY > 10)
+            setisScrolled(window.scrollY > 10)
         }
         window.addEventListener('scroll', handleScroll)
         return () => {

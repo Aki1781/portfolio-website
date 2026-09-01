@@ -6,12 +6,12 @@ import {
   MapPin,
   Phone,
   Send,
-  Twitch,
-  Twitter,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
+
+const CONTACT_EMAIL = "akipatel1781@gmail.com";
 
 const ContactSection = () => {
   const { toast } = useToast();
@@ -22,13 +22,28 @@ const ContactSection = () => {
 
     setIsSubmitting(true);
 
-    setTimeout(() => {
-      toast({
-        title: "Message sent!",
-        description: "Thank you for your message. I'll get back to you soon.",
-      });
-      setIsSubmitting(false);
-    }, 1500);
+    const formData = new FormData(e.currentTarget);
+    const name = formData.get("name");
+    const email = formData.get("email");
+    const message = formData.get("message");
+    const subject = `Portfolio message from ${name}`;
+    const body = [
+      `Name: ${name}`,
+      `Email: ${email}`,
+      "",
+      message,
+    ].join("\n");
+
+    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+
+    toast({
+      title: "Email draft opened",
+      description: "Review the message in your email app, then hit send.",
+    });
+
+    setIsSubmitting(false);
   };
 
   return (
@@ -57,10 +72,10 @@ const ContactSection = () => {
                 <div>
                   <h4 className="font-medium">Email</h4>
                   <a
-                    href="mailto:akipatel1781@gmail.com"
+                    href={`mailto:${CONTACT_EMAIL}`}
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    akipatel1781@gmail.com
+                    {CONTACT_EMAIL}
                   </a>
                 </div>
               </div>
@@ -102,7 +117,7 @@ const ContactSection = () => {
                 <a href="https://www.linkedin.com/in/akashpatel99/" target="_blank" aria-label="LinkedIn">
                   <Linkedin />
                 </a>
-                <a href="mailto:akipatel1781@gmail.com" target="_blank" aria-label="Twitter">
+                <a href={`mailto:${CONTACT_EMAIL}`} aria-label="Email">
                   <MailIcon />
                 </a>
                 <a href="https://www.instagram.com/akashpatel1_/?hl=en" target="_blank" aria-label="Instagram">
@@ -113,13 +128,10 @@ const ContactSection = () => {
           </div>
 
           {/* Right Side - Form */}
-          <div
-            className="bg-card p-8 rounded-lg shadow-xs"
-            onSubmit={handleSubmit}
-          >
+          <div className="bg-card p-8 rounded-lg shadow-xs">
             <h3 className="text-2xl font-semibold mb-6">Send a Message</h3>
 
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               {/* Name */}
               <div>
                 <label

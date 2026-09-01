@@ -17,12 +17,14 @@ const skills = [
   { name: "HTML/CSS", level: 95, category: "frontend" },
   { name: "JavaScript", level: 95, category: "frontend" },
   { name: "React", level: 95, category: "frontend" },
+  { name: "Angular", level: 85, category: "frontend" },
   { name: "TypeScript", level: 90, category: "frontend" },
   { name: "Tailwind CSS", level: 90, category: "frontend" },
   { name: "Next.js", level: 90, category: "frontend" },
 
   // Databases & Cloud
   { name: "AWS", level: 95, category: "backend" },
+  { name: "Azure", level: 85, category: "backend" },
   { name: "MongoDB", level: 90, category: "backend" },
   { name: "PostgreSQL", level: 90, category: "backend" },
   { name: "MySQL", level: 90, category: "backend" },
@@ -33,6 +35,8 @@ const skills = [
   { name: "Docker", level: 90, category: "tools" },
   { name: "JUnit", level: 85, category: "tools" },
   { name: "Cypress", level: 90, category: "tools" },
+  { name: "PyTorch", level: 85, category: "tools" },
+  { name: "TensorFlow", level: 85, category: "tools" },
   { name: "Figma", level: 90, category: "tools" },
   { name: "VS Code", level: 100, category: "tools" },
 ];
